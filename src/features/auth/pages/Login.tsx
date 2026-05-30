@@ -11,7 +11,7 @@ const Login = () => {
         <h1 className={styles.title}>Login</h1>
 
         {isError && error && (
-        <p className={styles['text-error']} role="alert">
+          <p className={styles['text-error']} role="alert">
             {error.message || 'Login failed'}
           </p>
         )}

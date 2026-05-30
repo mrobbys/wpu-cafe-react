@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import useOrderDetailQuery from '../hooks/useOrderDetailQuery';
-import styles from '../styles/OrderDetail.module.css'
+import styles from '../styles/OrderDetail.module.css';
 import Button from '../../../components/ui/Button';
 import OrderItemCard from '../components/OrderItemCard';
 import OrderInfoCard from '../components/OrderInfoCard';
@@ -36,7 +36,7 @@ const OrderDetail = () => {
         )}
       </section>
     </main>
-  )
-}
+  );
+};
 
 export default OrderDetail;

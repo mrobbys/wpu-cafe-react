@@ -13,12 +13,14 @@ const MenuFilter = () => {
           type="button"
           color={
             (!searchParams.get('category') && filter === 'All') ||
-              filter === searchParams.get('category')
+            filter === searchParams.get('category')
               ? 'primary'
               : 'secondary'
           }
           onClick={() =>
-            setSearchParams(filter === 'All' ? { page: '1' } : { category: filter, page: '1' })
+            setSearchParams(
+              filter === 'All' ? { page: '1' } : { category: filter, page: '1' }
+            )
           }
           key={filter}
         >

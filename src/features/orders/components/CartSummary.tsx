@@ -22,9 +22,7 @@ const CartSummary = ({ carts, onAddToCart, isPending }: CartSummaryProps) => {
               <div className={styles.quantity}>
                 <Button
                   type="button"
-                  onClick={() =>
-                    onAddToCart('decrement', item.id, item.name)
-                  }
+                  onClick={() => onAddToCart('decrement', item.id, item.name)}
                   color="secondary"
                   disabled={isPending}
                 >
@@ -33,9 +31,7 @@ const CartSummary = ({ carts, onAddToCart, isPending }: CartSummaryProps) => {
                 <div className={styles.number}>{item.quantity}</div>
                 <Button
                   type="button"
-                  onClick={() =>
-                    onAddToCart('increment', item.id, item.name)
-                  }
+                  onClick={() => onAddToCart('increment', item.id, item.name)}
                   color="secondary"
                   disabled={isPending}
                 >
@@ -44,7 +40,9 @@ const CartSummary = ({ carts, onAddToCart, isPending }: CartSummaryProps) => {
               </div>
             </div>
           ))}
-          <Button disabled={isPending} type="submit">Order</Button>
+          <Button disabled={isPending} type="submit">
+            Order
+          </Button>
         </div>
       ) : (
         <div className={styles.cart}>

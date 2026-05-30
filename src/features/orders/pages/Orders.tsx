@@ -25,13 +25,10 @@ const Orders = () => {
 
         {isError && <p>{error.message}</p>}
 
-        {!isPending && !isError && data && (
-          <OrderListTable orders={data} />
-        )}
-
+        {!isPending && !isError && data && <OrderListTable orders={data} />}
       </section>
     </main>
-  )
-}
+  );
+};
 
 export default Orders;

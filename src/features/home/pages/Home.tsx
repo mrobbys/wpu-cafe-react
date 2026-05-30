@@ -6,7 +6,7 @@ import { getUserToken } from '../../../utils/sessionStorage';
 const Home = () => {
   const token = getUserToken('userToken');
   const userIsLogged = !!token;
-  
+
   return (
     <main className={styles.home}>
       <h1>Welcome To WPU Cafe</h1>
@@ -20,7 +20,6 @@ const Home = () => {
           <Button>Login</Button>
         </Link>
       )}
-
     </main>
   );
 };

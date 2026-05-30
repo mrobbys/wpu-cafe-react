@@ -21,14 +21,13 @@ const Pagination = ({ totalPages }: PaginationProps) => {
 
   return (
     <div className={styles.pagination}>
-      <Button
-        disabled={page === 1}
-        onClick={() => handlePageChange(page - 1)}
-      >
+      <Button disabled={page === 1} onClick={() => handlePageChange(page - 1)}>
         &lt;
       </Button>
 
-      <span>Halaman {page} dari {totalPages || 1}</span>
+      <span>
+        Halaman {page} dari {totalPages || 1}
+      </span>
 
       <Button
         disabled={page === totalPages}

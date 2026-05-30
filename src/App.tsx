@@ -8,7 +8,7 @@ const App = () => {
       <Toaster />
       <RouterProvider router={router} />
     </>
-  )
+  );
 };
 
 export default App;

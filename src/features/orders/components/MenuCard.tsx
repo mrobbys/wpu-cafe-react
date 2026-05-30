@@ -23,9 +23,7 @@ const MenuCard = ({ item, onAddToCart }: MenuCardProps) => {
       <h2>{item.name}</h2>
       <div className={styles.bottom}>
         <p className={styles.price}>${item.price}</p>
-        <Button
-          onClick={() => onAddToCart('increment', item.id, item.name)}
-        >
+        <Button onClick={() => onAddToCart('increment', item.id, item.name)}>
           Order
         </Button>
       </div>

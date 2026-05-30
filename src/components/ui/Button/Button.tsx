@@ -19,7 +19,6 @@ const Button = ({
     <button
       type={type}
       disabled={disabled}
-
       className={`${styles.button} ${className || ''} ${color ? styles[color] : ''}`}
       onClick={onClick}
       {...props}
